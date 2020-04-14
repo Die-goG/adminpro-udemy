@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { SettingsService } from './services/settings.service';
+// import { SettingsService } from './services/settings.service';
+import { SettingsService} from './services/service.index';
+// importamos el archivo /services/service.index xq alli estan exportando todos los servicios
+/*     SettingsService
+       SharedService
+       SidebarService      */
+
 
 @Component({
   selector: 'app-root',

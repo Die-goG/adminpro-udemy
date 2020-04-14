@@ -1,6 +1,13 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { SettingsService } from 'src/app/services/settings.service';
+// import { SettingsService } from 'src/app/services/settings.service';
+import { SettingsService } from 'src/app/services/service.index';
+// importamos el archivo /services/service.index xq alli estan exportando todos los servicios
+/*     SettingsService
+       SharedService
+       SidebarService      */
+
+
 // import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
