@@ -18,11 +18,8 @@ import { FormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
-
-
-
-
+import { SettingsService } from './services/settings.service';
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -34,9 +31,11 @@ import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.com
     BrowserModule,
     APP_ROUTES,    /*Importamos la variable que contiene las rutas, esta variable esta definida en app.routes.ts*/
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [],
+  providers: [SettingsService], /* El servicio creado settings */
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { } /*declaramos el nombre que tendra este modulo*/

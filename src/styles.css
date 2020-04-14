@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+/* al pasar por las cajas en account-settings.component.html, aparece una mano en el cursor */
+
+#themecolors a {
+    cursor: pointer;
+}
