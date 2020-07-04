@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
 
 
 /* Temporal*/
-import { FormsModule } from '@angular/forms';
+// Formulario reactivo
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { LoginComponent } from './login/login.component';
@@ -38,6 +39,7 @@ import { ServiceModule } from './services/service.module';
     APP_ROUTES,    /*Importamos la variable que contiene las rutas, esta variable esta definida en app.routes.ts*/
     PagesModule,
     FormsModule,
+    ReactiveFormsModule,  // formulario reactivo
     ServiceModule
   ],
   providers: [],

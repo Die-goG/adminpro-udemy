@@ -35,7 +35,7 @@ export class RxjsComponent implements OnInit {
         contador ++;
         observer.next( contador );
 
-        if ( contador === 3 ){
+        if ( contador === 3 ) {
             clearInterval ( intervalo );
             observer.complete();
           }
@@ -49,7 +49,7 @@ export class RxjsComponent implements OnInit {
     }).pipe(
        map( resp => resp.valor),
        filter( (valor, index) => {
-          if ( (valor % 2) === 1 ){
+          if ( (valor % 2) === 1 ) {
               // impar
               return true;
           } else {
